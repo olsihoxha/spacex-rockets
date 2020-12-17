@@ -14,9 +14,23 @@ export default function Modal({rocket}) {
       </div>
       <div className="modal-body">
        <Carousel rocket={rocket}/>
-       <div>
-           <h1>Rocket</h1>
+       <h3>{rocket.name}</h3>
+       <div className="row rocket-info">
+           <div className="col-sm-4">
+            <h4>Height</h4>
+            <p>{rocket.height.feet} Feet</p>
+           </div>
+           <div className="col-sm-4">
+            <h4>Diameter</h4>
+            <p>{rocket.diameter.feet} Feet</p>
+           </div>
+           <div className="col-sm-4">
+            <h4>Mass</h4>
+            <p>{rocket.mass.kg / 1000} Tonne</p>
+           </div>
        </div>
+       <p>{rocket.description}</p>
+       <a href={rocket.wikipedia} className="btn btn-primary btn-block">Learn more at Wikipedia</a>
       </div>
       <div className="modal-footer">
         <button type="button" className="btn btn-secondary" data-dismiss="modal">Close</button>

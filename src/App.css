@@ -9,3 +9,22 @@
 .card{
   margin-bottom: 30px;
 }
+
+h1{
+  font-size: 78px;
+  text-align: center;
+  color: white;
+  margin:30px 0;
+}
+
+.filter-wrapper{
+  width: 200px;
+  margin:0 auto;
+  margin-bottom: 20px;
+}
+
+.filter-height{
+  padding: 10px;
+  text-align: center;
+  width: 100%;
+}
